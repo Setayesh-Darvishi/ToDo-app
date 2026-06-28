@@ -1,10 +1,37 @@
-function Login() {
+function Login({ setModalLogin }) {
   return (
     <div
       className="bg-black/50 fixed top-0 bottom-0 right-0 left-0 w-full 
     h-full z-10 flex flex-col items-center justify-center"
     >
-      <button className=""></button>
+      <button
+        onClick={() => setModalLogin(false)}
+        className="p-2 rounded-full backdrop-blur-lg border border-[#c23d6c]/20 bg-gradient-to-tr from-white/90
+       to-white/70 shadow-lg hover:shadow-2xl hover:shadow-[#c23d6c]/30 hover:scale-110 hover:rotate-2 active:scale-95 active:rotate-0 
+       transition-all duration-300 ease-out cursor-pointer hover:border-[#c23d6c]/50 hover:from-white hover:to-white/80 group relative overflow-hidden"
+      >
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-transparent via-[#da8ba7]/20 to-transparent -translate-x-full group-hover:translate-x-full 
+        transition-transform duration-700 ease-out"
+        />
+
+        <div className="relative z-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4 text-[#c23d6c] group-hover:text-[#ce6489] transition-colors duration-300"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </button>
 
       <div
         className="max-w-[350px] bg-gradient-to-t from-white to-[#f3d8e2] rounded-[40px] 

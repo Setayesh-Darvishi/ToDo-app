@@ -29,7 +29,7 @@ function NavBar() {
         <button onClick={() => setModalLogin(true)}>test</button>
       </div>
 
-      {modalLogin && <Login />}
+      {modalLogin && <Login setModalLogin={setModalLogin} />}
     </div>
   );
 }
