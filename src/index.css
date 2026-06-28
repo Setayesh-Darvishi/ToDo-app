@@ -28,6 +28,12 @@
   --font-special : "Plafair_Display";
 }
 
+@layer components{
+  .flex-center{
+    @apply flex flex-col items-center
+  }
+}
+
 body {
   margin: 0;
   background-color: #f9ecf0;
