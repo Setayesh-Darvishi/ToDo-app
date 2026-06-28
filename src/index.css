@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --color-old-rose-50: #f9ecf0;
+  --color-old-rose-100: #f3d8e2;
+  --color-old-rose-200: #e7b1c4;
+  --color-old-rose-300: #da8ba7;
+  --color-old-rose-400: #ce6489;
+  --color-old-rose-500: #c23d6c;
+  --color-old-rose-600: #9b3156;
+  --color-old-rose-700: #742541;
+  --color-old-rose-800: #4e182b;
+  --color-old-rose-900: #270c16;
+  --color-old-rose-950: #1b090f;
+}
+
+body{
+  margin: 0;
+  background-color: #f9ecf0;
+}
