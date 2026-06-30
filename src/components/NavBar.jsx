@@ -1,14 +1,21 @@
 import Login from "./Login";
+import AvatarPicker from "./AvatarPicker";
 import { useState, useEffect } from "react";
+
+const DEFAULT_AVATAR = "https://api.dicebear.com/9.x/adventurer/svg?seed=Felix";
 
 function NavBar() {
   const [modalLogin, setModalLogin] = useState(false);
+  const [showAvatarPicker, setShowAvatarPicker] = useState(false);
 
   const [valueName, setValueName] = useState(
     () => localStorage.getItem("userName") || "",
   );
   const [valueEmail, setValueEmail] = useState(
     () => localStorage.getItem("userEmail") || "",
+  );
+  const [avatar, setAvatar] = useState(
+    () => localStorage.getItem("userAvatar") || DEFAULT_AVATAR,
   );
 
   useEffect(() => {
@@ -18,6 +25,10 @@ function NavBar() {
   useEffect(() => {
     localStorage.setItem("userEmail", valueEmail);
   }, [valueEmail]);
+
+  useEffect(() => {
+    localStorage.setItem("userAvatar", avatar);
+  }, [avatar]);
 
   return (
     <div>
@@ -30,11 +41,17 @@ function NavBar() {
         </h1>
 
         <div className="flex-center gap-2 rounded-full">
-          <img
-            src=""
-            alt="profileImg"
-            className="w-20 h-20 rounded-full object-cover ring ring-old-rose-500"
-          />
+          <button
+            type="button"
+            onClick={() => setShowAvatarPicker(true)}
+            className="bg-old-rose-50 rounded-full cursor-pointer hover:scale-103 transition-transform duration-200"
+          >
+            <img
+              src={avatar}
+              alt="profileImg"
+              className="w-20 h-20 rounded-full object-cover border border-old-rose-500 ring ring-old-rose-300"
+            />
+          </button>
           <span className="text-old-rose-800 text-xl font-bold">
             {valueName}
           </span>
@@ -54,6 +71,13 @@ function NavBar() {
           setModalLogin={setModalLogin}
           setValueName={setValueName}
           setValueEmail={setValueEmail}
+        />
+      )}
+
+      {showAvatarPicker && (
+        <AvatarPicker
+          setShowAvatarPicker={setShowAvatarPicker}
+          setAvatar={setAvatar}
         />
       )}
     </div>
