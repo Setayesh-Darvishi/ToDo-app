@@ -35,7 +35,7 @@ function NavBar() {
     <div>
       <div
         className="flex-center pt-10 gap-5
-     bg-old-rose-100 h-screen w-1/6 rounded-br-4xl rounded-tr-4xl"
+     bg-old-rose-100 h-screen w-1/6 rounded-br-4xl rounded-tr-4xl shadow-[0px_30px_30px_-20px_#ce6489] "
       >
         <h1 className="text-old-rose-900 font-bold font-special text-2xl">
           ToDo List
@@ -50,8 +50,8 @@ function NavBar() {
             <img
               src={avatar}
               alt="profileImg"
-              className="w-20 h-20 rounded-full object-cover ring ring-old-rose-400
-              hover:ring-old-rose-500"
+              className="w-20 h-20 rounded-full object-cover border-3 border-dotted border-old-rose-500
+              outline-2 outline-offset-4 outline-old-rose-200"
             />
           </button>
           <span className="text-old-rose-800 text-xl font-bold">
