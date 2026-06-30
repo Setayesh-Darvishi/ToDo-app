@@ -9,7 +9,7 @@ function NavItems() {
       <button
         className="flex items-center gap-x-1 cursor-pointer
       focus:bg-old-rose-50 hover:bg-old-rose-50 w-full py-2 transition-transform duration-500 pl-2
-      rounded-l-full ml-2 focus:shadow-[0px_10px_10px_-10px_#ce6489]"
+      rounded-l-full focus:shadow-[0px_10px_10px_-10px_#ce6489]"
       >
         <DashboardSvg />
         <span className="span-style">Dashboard</span>
@@ -18,7 +18,7 @@ function NavItems() {
       <button
         className="flex items-center gap-x-1 cursor-pointer
       focus:bg-old-rose-50 hover:bg-old-rose-50 w-full py-2 transition-transform duration-500 pl-2
-      rounded-l-full ml-2 focus:shadow-[0px_10px_10px_-10px_#ce6489]"
+      rounded-l-full focus:shadow-[0px_10px_10px_-10px_#ce6489]"
       >
         <AllTasksSvg />
         <span className="span-style">All Tasks</span>
@@ -27,7 +27,7 @@ function NavItems() {
       <button
         className="flex items-center gap-x-1 cursor-pointer
       focus:bg-old-rose-50 hover:bg-old-rose-50 w-full py-2 transition-transform duration-500 pl-2
-      rounded-l-full ml-2 focus:shadow-[0px_10px_10px_-10px_#ce6489]"
+      rounded-l-full focus:shadow-[0px_10px_10px_-10px_#ce6489]"
       >
         <CreateTasksSvg />
         <span className="span-style">Create New Tasks</span>
@@ -36,7 +36,7 @@ function NavItems() {
       <button
         className="flex items-center gap-x-1 cursor-pointer
       focus:bg-old-rose-50 hover:bg-old-rose-50 w-full py-2 transition-transform duration-500 pl-2
-      rounded-l-full ml-2 focus:shadow-[0px_10px_10px_-10px_#ce6489]"
+      rounded-l-full focus:shadow-[0px_10px_10px_-10px_#ce6489]"
       >
         <CategorySvg />
         <span className="span-style">Category</span>

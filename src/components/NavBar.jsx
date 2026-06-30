@@ -35,7 +35,7 @@ function NavBar() {
     <div>
       <div
         className="flex-center pt-10 gap-5
-     bg-old-rose-100 h-screen w-1/6 rounded-br-4xl rounded-tr-4xl shadow-[0px_30px_30px_-20px_#ce6489] "
+     bg-old-rose-100 h-screen w-1/6 rounded-br-4xl rounded-tr-4xl"
       >
         <h1 className="text-old-rose-900 font-bold font-special text-2xl">
           ToDo List
