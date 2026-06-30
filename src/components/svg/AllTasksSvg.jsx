@@ -1,8 +1,8 @@
 function AllTasksSvg() {
   return (
     <svg
-      width="30px"
-      height="30px"
+      width="32px"
+      height="32px"
       viewBox="0 0 1024 1024"
       class="icon"
       version="1.1"
