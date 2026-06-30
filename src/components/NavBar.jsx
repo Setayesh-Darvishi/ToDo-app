@@ -49,7 +49,8 @@ function NavBar() {
             <img
               src={avatar}
               alt="profileImg"
-              className="w-20 h-20 rounded-full object-cover border border-old-rose-500 ring ring-old-rose-300"
+              className="w-20 h-20 rounded-full object-cover ring ring-old-rose-400
+              hover:ring-old-rose-500"
             />
           </button>
           <span className="text-old-rose-800 text-xl font-bold">
@@ -57,6 +58,8 @@ function NavBar() {
           </span>
           <span className="text-old-rose-700 text-sm">{valueEmail}</span>
         </div>
+
+        
 
         <button
           onClick={() => setModalLogin(true)}

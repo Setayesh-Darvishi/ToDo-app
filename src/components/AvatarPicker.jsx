@@ -1,3 +1,5 @@
+import CloseSvg from "./svg/CloseSvg";
+
 const AVAILABLE_AVATARS = [
   "https://api.dicebear.com/9.x/adventurer/svg?seed=Felix",
   "https://api.dicebear.com/9.x/adventurer/svg?seed=Aneka",
@@ -27,20 +29,7 @@ function AvatarPicker({ setShowAvatarPicker, setAvatar }) {
        transition-all duration-300 ease-out cursor-pointer hover:border-[#c23d6c]/50 hover:from-white hover:to-white/80 group relative overflow-hidden"
       >
         <div className="relative z-10">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-4 h-4 text-[#c23d6c] group-hover:text-[#ce6489] transition-colors duration-300"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18 18 6M6 6l12 12"
-            />
-          </svg>
+          <CloseSvg />
         </div>
       </button>
 
