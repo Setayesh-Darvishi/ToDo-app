@@ -32,6 +32,12 @@
   .flex-center{
     @apply flex flex-col items-center
   }
+
+  .span-style{
+    @apply text-old-rose-800 font-special text-xl
+    transition-transform duration-200
+    hover:text-old-rose-700
+  }
 }
 
 body {
