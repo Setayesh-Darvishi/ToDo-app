@@ -1,6 +1,7 @@
 import Login from "./Login";
 import AvatarPicker from "./AvatarPicker";
 import { useState, useEffect } from "react";
+import NavItems from "./NavItems";
 
 const DEFAULT_AVATAR = "https://api.dicebear.com/9.x/adventurer/svg?seed=Felix";
 
@@ -59,11 +60,11 @@ function NavBar() {
           <span className="text-old-rose-700 text-sm">{valueEmail}</span>
         </div>
 
-        
+        <NavItems />
 
         <button
           onClick={() => setModalLogin(true)}
-          className="text-old-rose-600 cursor-pointer hover:scale-103 hover:text-old-rose-500"
+          className="text-old-rose-600 cursor-pointer hover:scale-103 hover:text-old-rose-500 mt-12"
         >
           Login →
         </button>
